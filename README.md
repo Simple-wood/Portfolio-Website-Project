@@ -1,6 +1,6 @@
 # Kishal's Warudo
 
-A personal portfolio website showcasing Kishal Chhetri's education, skills, portfolio projects, and blog entries.
+A personal portfolio website showcasing my education, skills, portfolio projects along with a blog system.
 
 ## Features
 
