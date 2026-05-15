@@ -1,0 +1,224 @@
+/* ======================================================
+   PREVIEW ENTRY PAGE STYLES
+====================================================== */
+
+body{
+    margin: 0;
+    background-image: url(../images/bg.png);
+    /* https://makerworld.com/en/@shaztech - reference */
+    background-size: 100% 100vh;
+    background-size: cover;
+    font-family: 'montserrat', sans-serif;
+    padding-bottom: 10em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,#highlight a{
+    color:  #93c5fd;
+    border-bottom: 1px solid #93c5fd;
+}
+
+h1{
+    font-style: italic;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+header{
+    grid-area: header;
+    opacity: 0.9;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    background-color: #1e3a5f;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0em 0em 1em 0em;
+    padding: 1rem;
+}
+
+header h1,li a{
+    color: white;
+}
+
+header ul{
+    display: flex;
+    margin: 0em 1em 0em 1em;
+    gap: 3em;
+    text-align: center;
+    color:  #93c5fd;
+}
+
+/* ======================================================
+   PAGE GRID CONTAINER
+====================================================== */
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    ". blog ."
+    "footer footer footer";
+    color: white;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* ======================================================
+   BLOG SECTION
+====================================================== */
+
+#blog{
+    grid-area: blog;
+    background-color: #1e3a5f;
+    border: 5px solid #93c5fd;
+    opacity: 0.9;
+    padding: 1.5em;
+    border-radius: 2em;
+    margin: 2em 2em 2em 2em;  
+}
+
+/* ======================================================
+   ASIDE SECTIONS
+====================================================== */
+
+aside{
+    grid-area: info;
+    background-color: #132a4a;
+     border: 5px solid #93c5fd; 
+    max-width: 75%;
+    opacity: 0.9;
+    padding: 1.2em;
+    border-radius: 2em;
+    margin: 1em 0em 1em 2em;
+    font-weight: 450;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    font-size: 0.75em;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    margin-top: 2em;
+    padding: 1rem; 
+}
+
+footer a{
+    color: white;
+}
+
+/* ======================================================
+   TYPOGRAPHY
+====================================================== */
+
+#mainTitle{
+    font-weight: 650;
+    font-size: 3em;
+    border-bottom: 5px solid white;
+    padding-bottom: 0.25em;
+}
+
+/* ======================================================
+   BUTTONS
+====================================================== */
+
+#buttons{
+    display:flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+button{
+    width: 20em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    border: none;
+    font-weight: 650;
+    font-family: 'quicksand', sans-serif;
+    font-size: 1.35em;
+}
+
+button:hover{
+    background-color: #d3d1d1;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+
+button a:hover{
+    color:black;
+    border: 0;
+}
+
+aside h2{
+    font-weight: 650;
+    font-size: 2em;
+}
+
+aside p{
+    font-weight: 650;
+    font-size: 1.15em;
+    padding: 0.5em;
+}
+
+.date{
+    display: flex;
+    justify-content: right;
+    font-weight: 550;
+    font-size: 1em;
+}
+
+.title{
+    font-size: 1.75em;
+    font-weight: 650;
+    padding-bottom: 0.5em;
+}
+
+.entry{
+    font-family: "quicksand", sans-serif;
+    font-size: 1.05em;
+    padding-bottom: 1.15em;
+    border-bottom: 5px solid white;
+}
+
+/* ======================================================
+   CHOICE SECTION
+====================================================== */
+
+#choice{
+    font-size: 0.75em;
+    padding:1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #132a4a;
+    border: 4px solid #1e3a5f;
+}
+
+#choice h1{
+    text-align: center;
+    padding: 0em 0em 0.5em 0em;
+    font-size: 3em;
+}

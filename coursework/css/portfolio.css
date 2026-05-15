@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    font-family: 'montserrat', sans-serif;
+}
+
+
+
+/* ======================================================
+   MAIN PAGE GRID CONTAINER
+====================================================== */
+
+#container{
+    color: white;
+    display: grid;
+    column-gap: 0.3rem;
+    row-gap: 1rem;
+    grid-template-areas: 
+    "header header header"
+    "shadowspire ibm hack"
+    "pi sound greenpower"
+    "extra extra extra"
+    "footer footer footer";
+}
+
+
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+header{
+    display: flex;
+    grid-area: header;
+    gap: 1em;
+    justify-content: space-between;
+    background-color: #1e3a5f;
+    opacity: 0.9;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0em 0em 1em 0em;
+    padding: 1rem;
+}
+
+header{
+    grid-area: header;
+}
+
+header ul{
+    display: flex;
+    margin: 0em 1em 0em 1em;
+    gap: 3em;
+    text-align: center;
+    color:  #93c5fd;
+}
+
+
+
+/* ======================================================
+   LINKS / TEXT STYLING
+====================================================== */
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+a:hover,#highlight a{
+    color:  #93c5fd;
+    border-bottom: 1px solid #93c5fd;
+}
+
+ul{
+    list-style-type: none;
+    font-weight: 650;
+}
+
+h1{
+    font-weight: 650;
+    font-style: italic;
+}
+
+p{
+    font-family: 'quicksand', sans-serif;
+    font-size: 1.15em;
+    font-weight: 450;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+
+
+/* ======================================================
+   PORTFOLIO PROJECT SECTIONS
+====================================================== */
+
+#shadowspire{
+    grid-area: shadowspire;
+}
+
+#ibm{
+    grid-area: ibm;
+}
+
+#hacklondon{
+    grid-area: hack;
+}
+
+#pi{
+    grid-area: pi;
+}
+
+#soundboard{
+    grid-area: sound;
+}
+
+#greenpower{
+    grid-area: greenpower;
+}
+
+
+
+/* ======================================================
+   PORTFOLIO CARDS
+====================================================== */
+
+.portfolio{
+    background-color: #132a4a;
+    border: 4px solid #1e3a5f;
+    width: 85%;
+    opacity: 0.95;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.portfolio:hover{
+    border: 4px solid #38bdf8;    
+}
+
+.portfolio h1{
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #38bdf8;
+}
+
+
+
+/* ======================================================
+   EXTRACURRICULAR SECTION
+====================================================== */
+
+#extras{
+    grid-area: extra;
+    margin: 1em 3em 1em 3em;
+    padding: 1em;
+    background-color: #1e3a5f;
+    border: 5px solid #93c5fd;
+    border-radius: 1em;
+}
+
+#extras h1{
+    font-size: 3em;
+    border-bottom: 1px solid #38bdf8;
+}
+
+#extras figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#extras figure img{
+    max-width: 30%;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    font-size: 0.75em;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    margin-top: 2em;
+    padding: 1rem; 
+}
+
+footer a{
+    color: white;
+}

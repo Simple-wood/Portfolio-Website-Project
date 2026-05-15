@@ -1,0 +1,8 @@
+/* CSS Reset */
+body,header,h1,nav,ul,p,div,section,article,footer, form, aside, fieldset{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: 0;
+    vertical-align: baseline;
+}
